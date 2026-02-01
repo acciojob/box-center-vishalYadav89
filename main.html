@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Center Task</title>
+    <style>
+        /* 1. Position the Box at the center of the webpage */
+        .centered-box {
+            /* Position and Transformation */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
 
+            /* 2. Dimensions and Appearance */
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            border: 2px solid black;
+        }
+
+        /* 3. Centered Text inside the box */
+        .centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            /* Text Styling */
+            color: purple;
+            margin: 0;
+            white-space: nowrap; /* Keeps text on one line */
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="centered-box">
+        <p class="centered-text">This is center</p>
+    </div>
 
 </body>
-
 </html>
